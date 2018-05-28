@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ApplitoolsPOC" parallel="tests">
+    <test name="InterestTest">
+        <parameter name="url" value="https://creditcards.com/v2/zero-interest"/>
+        <parameter name="pageName" value="0% APR"/>
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="tests.CCTest"/>
+        </classes>
+    </test>
+    <test name="BalanceTransferTest">
+        <parameter name="url" value="https://www.creditcards.com/v2/balance-transfer/"/>
+        <parameter name="pageName" value="Balance-Transfer"/>
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="tests.CCTest"/>
+        </classes>
+    </test>
+    <test name="CashBackTest">
+        <parameter name="url" value="https://www.creditcards.com/v2/cash-back/"/>
+        <parameter name="pageName" value="Cash Back"/>
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="tests.CCTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: tests.CCTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 0.554 sec <<< FAILURE! - in tests.CCTest
+setupMethod(tests.CCTest)  Time elapsed: 0.498 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at tests.CCTest.setupMethod(CCTest.java:67)
+

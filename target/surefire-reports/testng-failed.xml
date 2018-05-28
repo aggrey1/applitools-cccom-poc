@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="tests.CCTest">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="testFullPage"/>
+          <include name="testCardDetails"/>
+          <include name="tearDown"/>
+          <include name="setupMethod"/>
+        </methods>
+      </class> <!-- tests.CCTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

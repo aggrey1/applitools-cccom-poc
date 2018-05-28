@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ApplitoolsPOC" parallel="tests">
+    <test name="InterestTest">
+        <parameter name="url" value="http://creditcards.com/v2/zero-interest/"/>
+        <parameter name="pageName" value="0% APR"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.CCTest"/>
+        </classes>
+    </test>
+</suite>

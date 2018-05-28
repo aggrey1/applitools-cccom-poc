@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ApplitoolsPOC]" parallel="tests">
+  <test name="InterestTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="pageName" value="0% APR"/>
+    <parameter name="url" value="http://creditcards.com/v2/zero-interest/"/>
+    <classes>
+      <class name="tests.CCTest">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="testCardDetails"/>
+          <include name="tearDown"/>
+          <include name="setupMethod"/>
+        </methods>
+      </class> <!-- tests.CCTest -->
+    </classes>
+  </test> <!-- InterestTest(failed) -->
+</suite> <!-- Failed suite [ApplitoolsPOC] -->
